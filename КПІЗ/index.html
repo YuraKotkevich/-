@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="code.js" type="text/javascript"></script>
+    <link href="styles.css" rel="stylesheet"></link>
+    <title>List of employees</title>
+  </head>
+
+  <body class="flexed">
+    <h2>List of employees</h2>
+    <section class="top flexed">
+      <div class="list flexed">  
+      </div>
+      <div id="card" class="flexed">
+        <div style="display: grid;">
+          <table>
+            <tr class="p">
+              <td>Name</td><td id="employeeName"></td>
+            </tr>
+            <tr class="p2">
+              <td>Position</td><td id="employeePost"></td>
+            </tr>
+            <tr class="p">
+              <td>Year of birth</td><td id="employeeAge"></td>
+            </tr>
+          </table>
+        </div>
+        <img id="employeeImg" width=450/>
+      </div>
+    </section>
+    
+    <section class="bottom flexed">
+      <div id="add" class="flexed">Add an employee (+)</div>
+    </section>
+    
+    <div id="overflow" class="flexed">
+      <div id="overflowDark"></div>
+      <div class="in-overflow">
+        <h2 id="title"></h2>
+        <form id="employeeData" class="flexed">
+          
+          <div class="inputs flexed" style="flex-direction: column;">
+            <input type="text" id="name" name="name" autocomplete="off" placeholder="Name" />
+            <input type="text" id="post" name="post" autocomplete="off" placeholder="Position" />
+            <div class="flexed small" style="width: 100%; justify-content: space-between;">
+              <input type="text" id="age" name="age" autocomplete="off" placeholder="Year of birth" />
+            </div>
+            <div class="photo">
+              <label>
+                <input type="file" id="photoInput" name="photo"/>
+                <img id="photo" width="200" title="Choose a photo"/>
+              </label>
+            </div>
+            <button id="submit"></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
